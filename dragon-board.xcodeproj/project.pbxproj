@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4584C04584C04584C0000000 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 459480459480459480000000 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				458690458690458690000000 /* CMake ReRun */,
+				458DD0458DD0458DD0000000 /* CMake Rules */,
+			);
+			dependencies = (
+				47A4E047A4E047A4E0000000 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		472850472850472850000000 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 473880473880473880000000 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				4729F04729F04729F0000000 /* CMake ReRun */,
+				473000473000473000000000 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				47AD4047AD4047AD40000000 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		460A30460A30460A30000000 /* AnalyzeData.C in Sources */ = {isa = PBXBuildFile; fileRef = 460370460370460370000000 /* AnalyzeData.C */; settings = {COMPILER_FLAGS = ""; }; };
+		460F90460F90460F90000000 /* AnalyzeCalibData.C in Sources */ = {isa = PBXBuildFile; fileRef = 460DB0460DB0460DB0000000 /* AnalyzeCalibData.C */; settings = {COMPILER_FLAGS = ""; }; };
+		461A40461A40461A40000000 /* AnalyzeDataTimeRes.C in Sources */ = {isa = PBXBuildFile; fileRef = 461860461860461860000000 /* AnalyzeDataTimeRes.C */; settings = {COMPILER_FLAGS = ""; }; };
+		4624F04624F04624F0000000 /* AnalyzeDataTimeResSin.C in Sources */ = {isa = PBXBuildFile; fileRef = 462310462310462310000000 /* AnalyzeDataTimeResSin.C */; settings = {COMPILER_FLAGS = ""; }; };
+		463540463540463540000000 /* CalcPeriod.C in Sources */ = {isa = PBXBuildFile; fileRef = 462DC0462DC0462DC0000000 /* CalcPeriod.C */; settings = {COMPILER_FLAGS = ""; }; };
+		463F70463F70463F70000000 /* CalibrateData.C in Sources */ = {isa = PBXBuildFile; fileRef = 463850463850463850000000 /* CalibrateData.C */; settings = {COMPILER_FLAGS = ""; }; };
+		4644D04644D04644D0000000 /* CalibrateDataCh7.C in Sources */ = {isa = PBXBuildFile; fileRef = 4642F04642F04642F0000000 /* CalibrateDataCh7.C */; settings = {COMPILER_FLAGS = ""; }; };
+		464F60464F60464F60000000 /* DisplayTimeResiduals.C in Sources */ = {isa = PBXBuildFile; fileRef = 464DA0464DA0464DA0000000 /* DisplayTimeResiduals.C */; settings = {COMPILER_FLAGS = ""; }; };
+		465A20465A20465A20000000 /* dragon-boardDict.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 465840465840465840000000 /* dragon-boardDict.cxx */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		479FE0479FE0479FE0000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456200456200456200000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 468F50468F50468F50000000;
+			remoteInfo = "dragon-board";
+		};
+		47AFB047AFB047AFB0000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456200456200456200000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4584C04584C04584C0000000;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45FC9045FC9045FC90000000 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		460370460370460370000000 /* AnalyzeData.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalyzeData.C; sourceTree = SOURCE_ROOT; };
+		460DB0460DB0460DB0000000 /* AnalyzeCalibData.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalyzeCalibData.C; sourceTree = SOURCE_ROOT; };
+		461860461860461860000000 /* AnalyzeDataTimeRes.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalyzeDataTimeRes.C; sourceTree = SOURCE_ROOT; };
+		462310462310462310000000 /* AnalyzeDataTimeResSin.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalyzeDataTimeResSin.C; sourceTree = SOURCE_ROOT; };
+		462DC0462DC0462DC0000000 /* CalcPeriod.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalcPeriod.C; sourceTree = SOURCE_ROOT; };
+		463850463850463850000000 /* CalibrateData.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalibrateData.C; sourceTree = SOURCE_ROOT; };
+		4642F04642F04642F0000000 /* CalibrateDataCh7.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalibrateDataCh7.C; sourceTree = SOURCE_ROOT; };
+		464DA0464DA0464DA0000000 /* DisplayTimeResiduals.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayTimeResiduals.C; sourceTree = SOURCE_ROOT; };
+		465840465840465840000000 /* dragon-boardDict.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "dragon-boardDict.cxx"; sourceTree = SOURCE_ROOT; };
+		466AC0466AC0466AC0000000 /* dragon-boardDict.cxx.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; path = "dragon-boardDict.cxx.rule"; sourceTree = SOURCE_ROOT; };
+		4719E04719E04719E0000000 /* libdragon-board.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libdragon-board.so"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		453520453520453520000000 = {
+			isa = PBXGroup;
+			children = (
+				4537F04537F04537F0000000 /* Sources */,
+				453BC0453BC0453BC0000000 /* Resources */,
+				453F90453F90453F90000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4537F04537F04537F0000000 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4541D04541D04541D0000000 /* ALL_BUILD */,
+				454DD0454DD0454DD0000000 /* dragon-board */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		453BC0453BC0453BC0000000 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		453F90453F90453F90000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4719E04719E04719E0000000 /* libdragon-board.so */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4541D04541D04541D0000000 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				454900454900454900000000 /* CMake Rules */,
+				45FC9045FC9045FC90000000 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		454900454900454900000000 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		454DD0454DD0454DD0000000 /* dragon-board */ = {
+			isa = PBXGroup;
+			children = (
+				455190455190455190000000 /* Source Files */,
+				455C30455C30455C30000000 /* CMake Rules */,
+				45FC9045FC9045FC90000000 /* CMakeLists.txt */,
+			);
+			name = "dragon-board";
+			sourceTree = "<group>";
+		};
+		455190455190455190000000 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				460370460370460370000000 /* AnalyzeData.C */,
+				460DB0460DB0460DB0000000 /* AnalyzeCalibData.C */,
+				461860461860461860000000 /* AnalyzeDataTimeRes.C */,
+				462310462310462310000000 /* AnalyzeDataTimeResSin.C */,
+				462DC0462DC0462DC0000000 /* CalcPeriod.C */,
+				463850463850463850000000 /* CalibrateData.C */,
+				4642F04642F04642F0000000 /* CalibrateDataCh7.C */,
+				464DA0464DA0464DA0000000 /* DisplayTimeResiduals.C */,
+				465840465840465840000000 /* dragon-boardDict.cxx */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		455C30455C30455C30000000 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				466AC0466AC0466AC0000000 /* dragon-boardDict.cxx.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		468F50468F50468F50000000 /* dragon-board */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469310469310469310000000 /* Build configuration list for PBXNativeTarget "dragon-board" */;
+			buildPhases = (
+				467A80467A80467A80000000 /* CMake ReRun */,
+				468020468020468020000000 /* CMake Rules */,
+				467510467510467510000000 /* Sources */,
+				468AC0468AC0468AC0000000 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dragon-board";
+			productName = "dragon-board";
+			productReference = 4719E04719E04719E0000000 /* libdragon-board.so */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456200456200456200000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 456A90456A90456A90000000 /* Build configuration list for PBXProject "dragon-board" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 0;
+			mainGroup = 453520453520453520000000;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4584C04584C04584C0000000 /* ALL_BUILD */,
+				468F50468F50468F50000000 /* dragon-board */,
+				472850472850472850000000 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		458690458690458690000000 /* CMake ReRun */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake ReRun";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/matteodepalo/Documents/Università/dragon-board -f /Users/matteodepalo/Documents/Università/dragon-board/CMakeScripts/ReRunCMake.make";
+		};
+		458DD0458DD0458DD0000000 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/matteodepalo/Documents/Università/dragon-board -f /Users/matteodepalo/Documents/Università/dragon-board/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+		};
+		467A80467A80467A80000000 /* CMake ReRun */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake ReRun";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/matteodepalo/Documents/Università/dragon-board -f /Users/matteodepalo/Documents/Università/dragon-board/CMakeScripts/ReRunCMake.make";
+		};
+		468020468020468020000000 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/matteodepalo/Documents/Università/dragon-board -f /Users/matteodepalo/Documents/Università/dragon-board/CMakeScripts/dragon-board_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+		};
+		468AC0468AC0468AC0000000 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/matteodepalo/Documents/Università/dragon-board -f /Users/matteodepalo/Documents/Università/dragon-board/CMakeScripts/dragon-board_postBuildPhase.make$CONFIGURATION all";
+		};
+		4729F04729F04729F0000000 /* CMake ReRun */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake ReRun";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/matteodepalo/Documents/Università/dragon-board -f /Users/matteodepalo/Documents/Università/dragon-board/CMakeScripts/ReRunCMake.make";
+		};
+		473000473000473000000000 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/matteodepalo/Documents/Università/dragon-board -f /Users/matteodepalo/Documents/Università/dragon-board/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		467510467510467510000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460A30460A30460A30000000 /* AnalyzeData.C in Sources */,
+				460F90460F90460F90000000 /* AnalyzeCalibData.C in Sources */,
+				461A40461A40461A40000000 /* AnalyzeDataTimeRes.C in Sources */,
+				4624F04624F04624F0000000 /* AnalyzeDataTimeResSin.C in Sources */,
+				463540463540463540000000 /* CalcPeriod.C in Sources */,
+				463F70463F70463F70000000 /* CalibrateData.C in Sources */,
+				4644D04644D04644D0000000 /* CalibrateDataCh7.C in Sources */,
+				464F60464F60464F60000000 /* DisplayTimeResiduals.C in Sources */,
+				465A20465A20465A20000000 /* dragon-boardDict.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47A4E047A4E047A4E0000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 468F50468F50468F50000000 /* dragon-board */;
+			targetProxy = 479FE0479FE0479FE0000000 /* PBXContainerItemProxy */;
+		};
+		47AD4047AD4047AD40000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4584C04584C04584C0000000 /* ALL_BUILD */;
+			targetProxy = 47AFB047AFB047AFB0000000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		456B40456B40456B40000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_64_BIT)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board/build";
+			};
+			name = Debug;
+		};
+		456D50456D50456D50000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_64_BIT)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board/build";
+			};
+			name = Release;
+		};
+		456F10456F10456F10000000 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_64_BIT)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board/build";
+			};
+			name = MinSizeRel;
+		};
+		457080457080457080000000 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_64_BIT)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board/build";
+			};
+			name = RelWithDebInfo;
+		};
+		4599B04599B04599B0000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		45B10045B10045B100000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		45C91045C91045C910000000 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		45E0C045E0C045E0C0000000 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		469670469670469670000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Users/matteodepalo/Documents/Università/dragon-board/lib/Debug";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .so;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)\"'",
+					dragon_board_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "/Users/matteodepalo/Documents/Università/dragon-board/lib/Debug";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/root/$(CONFIGURATION)",
+					/usr/local/lib/root,
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = (
+					"-fno-reorder-blocks",
+					"-fno-schedule-insns",
+					"-fno-inline",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fno-reorder-blocks",
+					"-fno-schedule-insns",
+					"-fno-inline",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-headerpad_max_install_names",
+					"-flat_namespace",
+					"-single_module",
+					"-undefined",
+					dynamic_lookup,
+					"-L/usr/local/lib/root",
+					"-lCore",
+					"-lCint",
+					"-lRIO",
+					"-lNet",
+					"-lHist",
+					"-lGraf",
+					"-lGraf3d",
+					"-lGpad",
+					"-lTree",
+					"-lRint",
+					"-lPostscript",
+					"-lMatrix",
+					"-lPhysics",
+					"-lMathCore",
+					"-lThread",
+					"-lfreetype",
+					"-lGui",
+					"-pthread",
+					"-lm",
+					"-ldl",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "dragon-board";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		469970469970469970000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Users/matteodepalo/Documents/Università/dragon-board/lib/Release";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .so;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)\"'",
+					dragon_board_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "/Users/matteodepalo/Documents/Università/dragon-board/lib/Release";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/root/$(CONFIGURATION)",
+					/usr/local/lib/root,
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = (
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-headerpad_max_install_names",
+					"-flat_namespace",
+					"-single_module",
+					"-undefined",
+					dynamic_lookup,
+					"-L/usr/local/lib/root",
+					"-lCore",
+					"-lCint",
+					"-lRIO",
+					"-lNet",
+					"-lHist",
+					"-lGraf",
+					"-lGraf3d",
+					"-lGpad",
+					"-lTree",
+					"-lRint",
+					"-lPostscript",
+					"-lMatrix",
+					"-lPhysics",
+					"-lMathCore",
+					"-lThread",
+					"-lfreetype",
+					"-lGui",
+					"-pthread",
+					"-lm",
+					"-ldl",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "dragon-board";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		46D6B046D6B046D6B0000000 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Users/matteodepalo/Documents/Università/dragon-board/lib/MinSizeRel";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .so;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)\"'",
+					dragon_board_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "/Users/matteodepalo/Documents/Università/dragon-board/lib/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/root/$(CONFIGURATION)",
+					/usr/local/lib/root,
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-headerpad_max_install_names",
+					"-flat_namespace",
+					"-single_module",
+					"-undefined",
+					dynamic_lookup,
+					"-L/usr/local/lib/root",
+					"-lCore",
+					"-lCint",
+					"-lRIO",
+					"-lNet",
+					"-lHist",
+					"-lGraf",
+					"-lGraf3d",
+					"-lGpad",
+					"-lTree",
+					"-lRint",
+					"-lPostscript",
+					"-lMatrix",
+					"-lPhysics",
+					"-lMathCore",
+					"-lThread",
+					"-lfreetype",
+					"-lGui",
+					"-pthread",
+					"-lm",
+					"-ldl",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "dragon-board";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		46F6C046F6C046F6C0000000 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Users/matteodepalo/Documents/Università/dragon-board/lib/RelWithDebInfo";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .so;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)\"'",
+					dragon_board_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "/Users/matteodepalo/Documents/Università/dragon-board/lib/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/root/$(CONFIGURATION)",
+					/usr/local/lib/root,
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = (
+					"-fPIC",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-headerpad_max_install_names",
+					"-flat_namespace",
+					"-single_module",
+					"-undefined",
+					dynamic_lookup,
+					"-L/usr/local/lib/root",
+					"-lCore",
+					"-lCint",
+					"-lRIO",
+					"-lNet",
+					"-lHist",
+					"-lGraf",
+					"-lGraf3d",
+					"-lGpad",
+					"-lTree",
+					"-lRint",
+					"-lPostscript",
+					"-lMatrix",
+					"-lPhysics",
+					"-lMathCore",
+					"-lThread",
+					"-lfreetype",
+					"-lGui",
+					"-pthread",
+					"-lm",
+					"-ldl",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "dragon-board";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		473D40473D40473D40000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		4754C04754C04754C0000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		476CA0476CA0476CA0000000 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		478470478470478470000000 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/root;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/matteodepalo/Documents/Università/dragon-board";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456A90456A90456A90000000 /* Build configuration list for PBXProject "dragon-board" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456B40456B40456B40000000 /* Debug */,
+				456D50456D50456D50000000 /* Release */,
+				456F10456F10456F10000000 /* MinSizeRel */,
+				457080457080457080000000 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		459480459480459480000000 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4599B04599B04599B0000000 /* Debug */,
+				45B10045B10045B100000000 /* Release */,
+				45C91045C91045C910000000 /* MinSizeRel */,
+				45E0C045E0C045E0C0000000 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		469310469310469310000000 /* Build configuration list for PBXNativeTarget "dragon-board" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469670469670469670000000 /* Debug */,
+				469970469970469970000000 /* Release */,
+				46D6B046D6B046D6B0000000 /* MinSizeRel */,
+				46F6C046F6C046F6C0000000 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		473880473880473880000000 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473D40473D40473D40000000 /* Debug */,
+				4754C04754C04754C0000000 /* Release */,
+				476CA0476CA0476CA0000000 /* MinSizeRel */,
+				478470478470478470000000 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456200456200456200000000 /* Project object */;
+}

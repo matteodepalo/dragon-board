@@ -1,0 +1,2 @@
+/Users/matteodepalo/Documents/Università/dragon-board/CMakeFiles/ALL_BUILD.dir
+/Users/matteodepalo/Documents/Università/dragon-board/CMakeFiles/dragon-board.dir
